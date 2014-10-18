@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+
+        <FrameLayout
+            android:id="@+id/cameraPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/top_mask"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/scan_mask"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/capture_crop_layout"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_below="@id/top_mask"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/capture"
+        android:contentDescription="@string/app_name" >
+
+        <ImageView
+            android:id="@+id/capture_scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/scan_line"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bottom_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/capture_crop_layout"
+        android:background="@drawable/scan_mask"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/left_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_mask"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/top_mask"
+        android:layout_toLeftOf="@id/capture_crop_layout"
+        android:background="@drawable/scan_mask"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/right_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_mask"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/top_mask"
+        android:layout_toRightOf="@id/capture_crop_layout"
+        android:background="@drawable/scan_mask"
+        android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/scanText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:layout_marginTop="440dp"
+            android:gravity="center_horizontal"
+            android:textSize="18dp"
+            android:text="将条形码放入框内，即可自动扫描" >
+        </TextView>
+        
+        <TextView
+            android:id="@+id/scanText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"
+            android:background="#FF000000"
+            android:text="扫描销券" >
+        </TextView>
+        
+      <LinearLayout
+ 		android:layout_width="match_parent"
+    	android:layout_height="70dp"
+  		android:layout_alignParentBottom="true"		
+        android:orientation="vertical">  
+        
+         <TextView
+            android:id="@+id/scanNULL2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:gravity="center_horizontal"
+            android:textSize="10dp"
+            android:background="@drawable/scanandinput"
+            android:text="" > 
+        </TextView>  
+        
+       <LinearLayout
+ 		android:layout_width="match_parent"
+    	android:layout_height="60dp"
+		
+ 		android:background="@drawable/scanandinput"	
+        android:orientation="horizontal">
+        
+        <LinearLayout
+    	android:layout_height="60dp"
+ 		
+
+ 		android:layout_width="fill_parent" 
+ 		android:layout_weight="1" 
+ 		android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/clientbutton"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+ 			android:layout_gravity="center_horizontal"
+  			android:layout_marginLeft="40dp"
+            android:background="@drawable/client_activity" />
+            
+        </LinearLayout>    
+
+         <LinearLayout
+ 		android:layout_width="fill_parent" 
+ 		android:layout_weight="1" 
+    	android:layout_height="60dp"
+ 		
+ 		android:layout_marginBottom="10dp"
+ 		android:orientation="horizontal">
+                        
+        <Button
+            android:id="@+id/inputbutton"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+  			android:layout_marginLeft="40dp"
+            android:background="@drawable/client_input_selector" />   
+         </LinearLayout>         
+    </LinearLayout>
+     </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

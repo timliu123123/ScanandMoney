@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fsms="http://schemas.android.com/apk/res/com.zbar.lib"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+        
+        <TextView
+            android:id="@+id/scanText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="30dp"
+            android:background="#FF000000"
+            android:text="扫描销券" >
+        </TextView>
+
+
+        
+         <LinearLayout
+        android:layout_marginTop="20dp"     
+ 		android:layout_width="match_parent"
+    	android:layout_height="480dp"
+ 		android:background="#FFFFFFFF"
+        android:orientation="vertical">   
+
+        <TextView
+            android:id="@+id/scanNULL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16dp"
+            android:background="#FFFFFFFF"
+            android:text="" >
+        </TextView>             
+             
+
+         <LinearLayout
+ 			android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+			android:orientation="horizontal">
+                             
+			<com.zbar.lib.DivisionEditText
+		    	android:id="@+id/editText1"
+		    	android:layout_width="240dp"
+		    	android:layout_height="60dp"
+		    	android:layout_marginLeft="10dp"
+				android:layout_marginTop = "120dp"
+		    	android:singleLine="true"
+		    	android:paddingLeft="10dp"
+		    	android:text="请输入优惠券号码"
+		    	android:textSize="18dp" 
+		    	fsms:delimiter="-"  
+        		fsms:eachLength="4"  
+        		fsms:placeHolder=" "  
+        		fsms:totalLength="16" 
+				android:numeric="integer">
+		    	<requestFocus />
+			</com.zbar.lib.DivisionEditText>
+
+        <Button
+            android:id="@+id/inputbutton" 
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop = "119dp"
+            android:background="@drawable/confirm" />
+			
+		</LinearLayout>	            
+             
+        <TextView
+            android:id="@+id/scanText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+ 			android:layout_marginLeft="30dp"
+            android:textSize="16dp"
+            android:textColor="#FFFF0000"
+			android:text="请输入优惠券号码，按确定进行核销" >
+        </TextView>
+
+</LinearLayout>
+
+         <LinearLayout
+ 		android:layout_width="match_parent"
+    	android:layout_height="10dp"
+		android:id="@+id/linearlayoutnull"
+		android:background="@drawable/scanandinput"
+        android:orientation="horizontal">
+        
+         <TextView
+            android:id="@+id/scanNULL2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:gravity="center_horizontal"
+            android:textSize="10dp"
+            
+            android:text="" > 
+        </TextView>            
+        </LinearLayout>      
+
+		<include android:layout_alignParentTop = "true" layout = "@layout/zbar_button"/>  
+    
+
+    
+    
+</LinearLayout>

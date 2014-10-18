@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+        
+        <TextView
+            android:id="@+id/scanText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="24dp"
+            android:background="#FF000000"
+            android:text="扫描销券" >
+        </TextView>
+
+
+        
+         <LinearLayout
+        android:layout_marginTop="20dp"     
+ 		android:layout_width="match_parent"
+    	android:layout_height="396dp"
+ 		android:background="#FFFFFFFF"
+        android:orientation="vertical">   
+
+        <TextView
+            android:id="@+id/scanNULL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16dp"
+            android:background="#FFFFFFFF"
+            android:text="" >
+        </TextView>             
+             
+
+         <LinearLayout
+ 			android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+			android:orientation="horizontal">
+                             
+			<EditText
+		    	android:id="@+id/editText1"
+		    	android:layout_width="205dp"
+		    	android:layout_height="60dp"
+		    	android:layout_marginLeft="10dp"
+				android:layout_marginTop = "120dp"
+		    	android:singleLine="true"
+		    	android:paddingLeft="77dp"
+		    	android:text="请输入优惠券号码"
+		    	android:textSize="18dp" 
+				android:numeric="integer"
+				android:background="@drawable/moneyorpaper_input">
+		    	<requestFocus />
+			</EditText>
+
+        <Button
+            android:id="@+id/inputbutton"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop = "118dp"
+            android:background="@drawable/confirm" />
+			
+		</LinearLayout>	            
+             
+        <TextView
+            android:id="@+id/scanText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+ 			android:layout_marginLeft="30dp"
+            android:textSize="16dp"
+            android:textColor="#FFFF0000"
+			android:text="请输入优惠券号码，按确定进行核销" >
+        </TextView>
+
+
+
+         </LinearLayout>
+         
+           <LinearLayout
+ 		android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+ 
+        android:orientation="horizontal">
+        
+         <TextView
+            android:id="@+id/scanNULL2"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:gravity="center_horizontal"
+
+            android:background="#FF2F2F2F"
+            android:text="" > 
+        </TextView>            
+        </LinearLayout>        
+                
+		<LinearLayout 
+			android:id="@+id/linearlayoutbutton"
+ 			android:layout_width="match_parent"
+    		android:layout_height="60dp"
+
+	 		android:background="#FF2F2F2F" 	
+	 		android:layout_gravity="center_vertical"	
+	        android:orientation="horizontal">
+	        
+	        <LinearLayout
+	    	android:layout_height="wrap_content"
+	 		android:layout_width="fill_parent" 
+	 		android:layout_weight="1" 
+	 		android:gravity = "center"	
+	 		
+	        android:orientation="horizontal">
+	        
+	        <Button
+	            android:id="@+id/clientbutton"
+	            android:layout_width="67dp" 
+	            android:layout_height="50dp"
+	 			android:layout_gravity="center_horizontal"
+	  			
+	            android:background="@drawable/client_activity" />
+	            
+	        </LinearLayout>    
+	
+	         <LinearLayout
+	 		android:layout_width="fill_parent" 
+	 		android:layout_weight="1" 
+	    	android:layout_height="wrap_content"
+			android:gravity = "center"	
+			
+	 		android:orientation="horizontal">
+	                        
+	        <Button 
+	            android:id="@+id/client_inputbutton"
+	            android:layout_width="67dp"  
+	            android:layout_height="50dp" 
+	            android:layout_gravity="center_horizontal"
+	  			
+	            android:background="@drawable/client_input_selector" />   
+	         </LinearLayout>         
+	    </LinearLayout>
+    
+  
+    
+</LinearLayout>

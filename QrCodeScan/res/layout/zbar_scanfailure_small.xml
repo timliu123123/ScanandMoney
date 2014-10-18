@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+        
+        <TextView
+            android:id="@+id/scanText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="30dp"
+            android:background="#FF000000"
+            android:text="扫描销券" >
+        </TextView>
+            
+        
+         <LinearLayout
+        android:layout_marginTop="20dp"     
+ 		android:layout_width="match_parent"
+    	android:layout_height="388dp"
+ 		android:background="#FFFFFFFF"
+        android:orientation="vertical">   
+
+        <TextView
+            android:id="@+id/scanNULL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16dp"
+            android:background="#FFFFFFFF"
+            android:text="" >
+        </TextView>             
+             
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/client_failure_icon" />
+                     
+        <TextView
+            android:id="@+id/scanText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+ 			android:gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textColor="#FF999999"
+            android:layout_marginTop="30dp"
+            android:text="扫描失败" >
+        </TextView>             
+             
+        <TextView
+            android:id="@+id/scanText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+ 			android:gravity="center_horizontal"
+            android:textSize="16dp"
+            android:textColor="#FF999999"
+            android:text="建议手工录入" >
+        </TextView>
+
+
+
+         </LinearLayout>
+         
+       <LinearLayout
+ 		android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+ 
+        android:orientation="horizontal">
+        
+         <TextView
+            android:id="@+id/scanNULL2"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:gravity="center_horizontal"
+
+            android:background="@drawable/scanandinput"
+            android:text="" > 
+        </TextView>            
+        </LinearLayout>        
+                
+		<include android:layout_alignParentTop = "true" layout = "@layout/zbar_button_small"/>  
+                
+
+    
+</LinearLayout>

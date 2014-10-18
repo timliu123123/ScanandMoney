@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+        
+        <TextView
+            android:id="@+id/scanText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="24dp"
+            android:background="#FF000000"
+            android:text="设置" >
+        </TextView>
+        
+         <LinearLayout
+        android:layout_marginTop="20dp"     
+ 		android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+ 		android:background="#FFFFFFFF"
+        android:orientation="vertical">   
+
+ 
+        <Button
+            android:id="@+id/checknewbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checknew" />          
+             
+        <Button
+            android:id="@+id/aboutbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/about" /> 
+
+        <Button
+            android:id="@+id/exitbutton"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="210dp"
+            android:background="@drawable/set_exit" />  
+        
+
+
+         </LinearLayout>
+         
+          
+                
+
+</LinearLayout>

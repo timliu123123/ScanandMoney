@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/linearlayoutbutton"
+ 		android:layout_width="match_parent"
+    	android:layout_height="60dp"
+
+ 		android:background="@drawable/scanandinput" 	
+ 		android:layout_gravity="center_vertical"	
+        android:orientation="horizontal">
+        
+        <LinearLayout
+    	android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent" 
+ 		android:layout_weight="1" 
+ 		android:gravity = "center"	
+ 		
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/clientbutton"
+            android:layout_width="67dp" 
+            android:layout_height="50dp"
+ 			android:layout_gravity="center_horizontal"
+  			
+            android:background="@drawable/client_activity" />
+            
+        </LinearLayout>    
+
+         <LinearLayout
+ 		android:layout_width="fill_parent" 
+ 		android:layout_weight="1" 
+    	android:layout_height="wrap_content"
+		android:gravity = "center"	
+		
+ 		android:orientation="horizontal">
+                        
+        <Button 
+            android:id="@+id/client_inputbutton"
+            android:layout_width="67dp"  
+            android:layout_height="50dp" 
+            android:layout_gravity="center_horizontal"
+  			
+            android:background="@drawable/client_input_selector" />   
+         </LinearLayout>         
+    </LinearLayout>
+    
